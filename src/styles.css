@@ -1,1 +1,596 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+header {
+  height: 20px;
+}
+
+body {
+  background-color: #F3F3F3;
+}
+
+/* Esto es Home*/
+.Home {
+  margin: 100px;
+  margin-top: 1px;
+  margin-bottom: 50px;
+  min-height: 850px;
+  background-color: lightgrey;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  clear: both;
+}
+
+.Home {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+}
+
+
+.home-name {
+  float: left;
+  vertical-align: top;
+  margin: 50px;
+  margin-bottom: 25px;
+  max-width: 50%;
+}
+
+.home-name p {
+  color: white;
+  font-size: large;
+}
+
+.img-container {
+  float: left;
+  margin: 50px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80);
+  overflow:hidden;
+}
+
+.home-name h1 {
+  font-weight: 750;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  cursor: pointer;
+  width: 50%;
+}
+
+
+/*  Efecto iluminar nombre y apellido  */
+
+.home-name h1:hover, .home-name h1:focus, .home-name h1:active {
+  text-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
+  transition: 0.3s;
+}
+
+/* Fin del efecto iluminar  */
+
+.home-name h2 {
+  color: white;
+}
+
+.home-name h3 {
+  color: white;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* EFECTOS VISUALES PARA IMAGEN DE PERFIL  */
+
+/* Efecto de acercar imagen de perfil */
+
+.img-container img:hover {
+  -webkit-transform:scale(1.3);
+  transform:scale(1.3);
+  transition: .5s;
+}
+
+/* Efecto de luz al pasar el mouse sobre foto */
+
+.img-container  {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(10px) translateZ(0);
+    transform: perspective(10px) translateZ(0);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+  }
+  .img-container:hover, .img-container:focus, .img-container:active {
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.6);
+}
+
+/* AQUI TERMINAN LOS EFECTOS VISUALES PARA FOTO DE PERFIL */
+
+/*   Esto es Intro   */
+
+.intro {
+  clear: both;
+  padding: 10px;
+  margin: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #E1FFFF;
+  background-image: url(../assets/img/intro.jpg);
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 100%;
+
+}
+
+.perfil {
+  float: left;
+  opacity: 80%;
+  width: 45%;
+  min-height: 40%;
+  margin: 2%;
+  padding: 20px;
+  text-align: justify;
+  background-color: lightgray;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+}
+
+.objetivo {
+  float: left;
+  opacity: 80%;
+  width: 47%;
+  min-height: 40%;
+  margin: 2%;
+  padding: 20px;
+  text-align: justify;
+  background-color: lightgray;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+}
+
+p {
+  font-size: x-large;
+}
+
+/* Media query para telefonos mobiles*/
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 720px) and (max-width: 1280px) {
+  .Home {
+    min-height: 600px;
+  }
+}
+
+/* Otros Media Query*/
+
+/* Para 960px */
+@media only screen and (max-width: 980px) and (min-width: 821px) {
+
+}
+
+/* Para 800px */
+@media only screen and (max-width: 820px) and (min-width: 621px) {
+
+}
+
+/* Para 600px */
+@media only screen and (max-width: 620px) and (min-width: 501px) {
+
+}
+
+/* Para 480px */
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+
+}
+
+/* Para 320px */
+@media only screen and (max-width: 340px) and (min-width: 5px)  {
+
+}
+
+/*   Esta es la seccion de Formacion academica   */
+
+.formacion {
+  margin: 100px;
+  margin-top: 50px;
+  padding: 20px;
+  min-height: 1200px;
+  background-color: #e6dbb9;
+  background-image: url(../assets/img/formacion1.jpg);
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  clear: both;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+}
+
+
+.formacion h2 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.cuadro-formacion {
+  padding: 20px;
+  margin: 8px;
+  border: 1px solid black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+}
+
+.cuadro-formacion {
+  background-color: lightgrey;
+  opacity: 70%;
+}
+
+.grid {
+  display: grid;
+
+}
+
+
+/* Efecto Resplandor para cuadro al pasar el mouse */
+
+.cuadro-formacion:hover, .cuadro-formacion:focus {
+  color: black;
+  outline: 0;
+  opacity: 93%;
+}
+
+.cuadro-formacion:hover {
+  box-shadow: 0 0 100px 20px #FFFFFF ;
+  transition-duration: 0.5s;
+}
+
+/*  Fin del Efecto  */
+
+.lista-formacion {
+  font-size: x-large;
+}
+
+/*   Esta es la seccion de Experiencia Laboral  */
+
+.experiencia {
+  padding: 20px;
+  margin: 100px;
+  background-color: #F6DDCC;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  clear: both;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+}
+
+.experiencia {
+  background-image: url(../assets/img/explaboral\ blur.jpg);
+  background-size: cover;
+}
+
+.cuadro-experiencia:hover {
+  filter: opacity(.9);
+  transition-duration: 0.5s;
+}
+
+.experiencia h2 {
+  color: white;
+  text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+
+.lista-experiencia {
+  font-size: x-large;
+  text-align: justify;
+}
+
+.cuadro-experiencia {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+}
+
+.cuadro-experiencia {
+  background-color: lightgray;
+  opacity:0.8;
+}
+
+/*    Esta es la seccion de informatica   */
+
+.container-informatica {
+  padding: 30px;
+  margin: 100px;
+  min-height: 600px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-image: url(../assets/img/informatica.jpg);
+  background-size: cover;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+}
+
+.container-informatica:hover {
+  filter: saturate(200%);
+  transition-duration: 0.7s;
+}
+
+.informatica {
+  float: left;
+  padding: 20px;
+  min-width: 50%;
+  min-height: 400px;
+  margin: 10px;
+  background-color: lightgray;
+  opacity:0.8;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+
+}
+
+.lista-informatica {
+  font-size: x-large;
+  text-align: justify;
+}
+
+/* Habilidades Desarrollo Web   */
+
+.contenedor-habilidades {
+  background-color: var(--bs-info);
+  background-image: url(../assets/img/desarrolloweb.jpg);
+  background-position: fixed;
+  background-size: cover;
+  padding: 30px;
+  margin: 100px;
+  min-height: 300px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+
+}
+
+.contenedor-habilidades h2 {
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 1px black;
+
+}
+
+.contenedor-lenguajes {
+  background-color: lightgray;
+  opacity: 80%;
+  float: left;
+  margin: 10px;
+  padding: 30px;
+  font-size: x-large;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+
+}
+
+.contenedor-lenguajes:hover, .contenedor-lenguajes:focus  {
+
+  transition-duration: 0.7s;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.6);
+}
+
+.desarrollo-datos {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 var(--mb-2);
+  margin-bottom: var(--mb-4);
+}
+
+.bd-grid {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 2rem;
+}
+
+.barra {
+  position: absolute;
+  bottom: -3px;
+  height: 5px;
+  background-color: #21B600;
+}
+
+
+/*   Esta es la seccion Conocimientos Complementarios    */
+
+.complementarios {
+  clear: both;
+  padding: 20px;
+  margin: 100px;
+  background-image: url(../assets/img/conocimientos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+}
+
+
+.complementarios h2 {
+  color: white;
+}
+
+.lista-complementarios {
+  text-align: justify;
+  font-size: x-large;
+}
+
+.contenedor-lista {
+  padding: 20px;
+  margin: 50px;
+  margin-top: 25px;
+  background-color: lightgray;
+  opacity: 75%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.contenedor-lista:hover, .contenedor-lista:focus {
+  transition-duration: 0.7s;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.7);
+}
+
+/*    Esta es la seccion Contacto    */
+
+.contacto {
+
+  margin: 100px;
+  padding: 20px;
+  min-height: 375px;
+  background-color: #E1FFFF;
+  background-image: url(../assets/img/fondocontacto.png);
+  background-position: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80);
+}
+
+.contacto h2 {
+  text-align: center;
+  font-weight: 800;
+  font-stretch: var(--bs-font-monospace);
+}
+
+.contacto p {
+  text-align: center;
+}
+
+.cuadro-contacto {
+  padding: 20px;
+  background-color: lightgray;
+  max-width: 600px;
+  min-height: 325px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80);
+}
+
+.cuadro-contacto {
+  margin-left: auto;
+  margin-right: auto;
+  opacity:0.9;
+}
+
+
+/*  Esto es Estilos para Login y Registro */
+
+ * {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.custom-form {
+  min-width: 300px;
+  max-width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem 3rem;
+
+  border-radius: 2.5rem;
+  background-color: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+  color: black;
+
+}
+.custom-form input {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px
+      rgba(0, 0, 0, 0.1);
+  border: 0 none;
+  background: #ebf5fc;
+}
+.custom-form button {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border: none;
+  font-size: 0.875rem;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #93acff;
+  width: 100%;
+  display: block;
+  padding: 0.875rem 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  cursor: pointer;
+}
+
+.custom-form button:hover {
+  background-color: #9bfa86;
+  color: #000;
+}

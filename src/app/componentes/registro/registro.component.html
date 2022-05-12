@@ -1,0 +1,32 @@
+<div>
+  <button class="btn btn-primary" (click)="volverInicio()" >Volver a Inicio</button>
+</div>
+
+<div class="register">
+  <form class="custom-form" method="post">
+    <h1>Regístrate</h1>
+    <input
+      type="email"
+      [(ngModel)]="email"
+      name="email"
+      placeholder="Email"
+      required="required"
+    />
+    <input
+      type="password"
+      [(ngModel)]="password"
+      name="password"
+      placeholder="Contraseña"
+      required="required"
+    />
+    <a>La contraseña debe tener al menos 8 caracteres.</a>
+    <input
+      type="password"
+      [(ngModel)]="confirmPassword"
+      name="confirm-password"
+      placeholder="Repite tu contraseña"
+      required="required"
+    />
+    <button type="submit" (click)="register()">Registrarse</button>
+  </form>
+</div>

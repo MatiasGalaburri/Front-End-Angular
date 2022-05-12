@@ -1,0 +1,18 @@
+
+.register {
+  display: grid;
+  margin-top: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-image: url(src\assets\img\registro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  border-radius: 20px;
+  min-height: 850px;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+}
+
+.btn btn-primary {
+  align-items: center;
+}

@@ -1,0 +1,19 @@
+<!--------------------Aqui comienza Footer--------------------->
+
+<footer>
+  <section id="contacto">
+      <div class="contacto">
+          <div *ngFor="let contacto of contactoList" class="cuadro-contacto">
+              <h2><img src="assets/img/Contacto.png" width="40px"> Contacto y Redes Sociales</h2>
+              <p><img src="assets/img/whatsapp.png" width="45px" alt="Whatsapp"><b>Teléfono Celular:</b> {{contacto.telefono}}
+              </p>
+              <p><img src="assets/img/gmail-logo.png" width="45px"> <b>E-Mail:</b> {{contacto.email}}</p>
+              <p><img [src]="contacto.imgRedSocial1" width="45px"><a target="_blank"
+                      rel="noopener noreferrer"
+                      [href]="contacto.urlRedSocial1">Linkedin</a></p>
+              <p><img [src]="contacto.imgRedSocial2" width="50px"><a target="_blank"
+                      rel="noopener noreferrer" [href]="contacto.urlRedSocial2">GitHub</a></p>
+          </div>
+      </div>
+  </section>
+</footer>

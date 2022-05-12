@@ -1,0 +1,22 @@
+.login {
+  display: grid;
+  margin-top: 5px;
+  margin: 50px;
+  background-image: url(src\assets\img\login.jpg);
+  background-size: cover;
+  background-position: fixed;
+  border-radius: 20px;
+  min-height: 850px;
+  box-shadow: 1px 15px 35px rgba(0, 0, 0, 0.80)
+}
+
+.error {
+  color: red;
+}
+
+.eresnuevo {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+

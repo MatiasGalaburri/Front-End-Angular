@@ -1,0 +1,54 @@
+<main class="login">
+  <div>
+    <form
+      [formGroup]="form"
+      (ngSubmit)="onEnviar($event)"
+      class="custom-form"
+      method="post"
+    >
+      <h1>Iniciar Sesión</h1>
+      <input
+        type="email"
+        placeholder="Email"
+        required="required"
+        formControlName="email"
+        [ngClass]="{
+          'is-invalid': Email?.errors && Email?.touched,
+          'is-valid': !Email?.errors && Email?.touched
+        }"
+      />
+      <div *ngIf="Email?.errors && Email?.touched">
+        <p *ngIf="Email?.hasError('required')" class="error">
+          El Email es requerido.
+        </p>
+        <p *ngIf="Email?.hasError('email')" class="error">
+          El formato de Email debe ser válido.
+        </p>
+      </div>
+      <input
+        type="password"
+        placeholder="Contraseña"
+        required="required"
+        formControlName="password"
+        [ngClass]="{
+          'is-invalid': Password?.errors && Password?.touched,
+          'is-valid': !Password?.errors && Password?.touched
+        }"
+      />
+      <div *ngIf="Password?.errors && Password?.touched">
+        <p *ngIf="Password?.hasError('required')" class="error">
+          La Contraseña es requerida.
+        </p>
+        <p *ngIf="Password?.errors?.['minLength']" class="error">
+          La Contrseña debe ser de al menos 8 caracteres.
+        </p>
+      </div>
+
+      <button type="submit" >Ingresar</button>
+      <div class="eresnuevo">
+        <h3>Eres Nuevo?</h3>
+        <button type="submit" (click)="irARegistro()">Crear Usuario</button>
+      </div>
+    </form>
+  </div>
+</main>

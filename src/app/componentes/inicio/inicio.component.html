@@ -1,0 +1,60 @@
+  <!-------------------Aqui comienza Inicio------------->
+
+  <section class="Home" style="background-image: url('{{ miPortfolio.imgFondo }}');">
+
+    <div class="btn-edit"><a class="btn-right"><i class="fa fa-pen"
+      onclick="showEditProfileModal()"></i></a>
+    </div>
+
+    <div class="home-name">
+        <h1 id="edit-nombre">{{ miPortfolio.nombre }}</h1>
+        <h2 id="edit-titulo">{{ miPortfolio.titulo }}</h2>
+        <h3 id="edit-opcional">{{ miPortfolio.textoOpcional }} <img [src]="miPortfolio.imgBandera" width="40px"></h3>
+        <p id="edit-saludo"> {{ miPortfolio.saludoInicial }}
+        </p>
+    </div>
+
+    <div class="img-container">
+        <img id="edit-foto" [src]="miPortfolio.imgPerfil" width="350px" alt="Foto Perfil"
+            title="Matias Galaburri">
+    </div>
+</section>
+
+
+<!-- Modal Edit Inicio-->
+<div class="modal fade" id="editProfile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar Inicio</h5>
+          <button type="button" class="close" onclick="$('#editProfile').modal('hide');" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="inputName">Nombre</label>
+            <input type="text" class="form-control" id="inputNombre" placeholder="Enter nombre">
+          </div>
+          <div class="form-group">
+            <label for="inputPosition">Titulo</label>
+            <input type="text" class="form-control" id="inputTitulo" placeholder="Enter titulo">
+          </div>
+          <div class="form-group">
+            <label for="inputCompany">Texto Opcional</label>
+            <input type="text" class="form-control" id="inputOpcional" placeholder="Enter opcional">
+          </div>
+          <div class="form-group">
+            <label for="inputUbication">Saludo</label>
+            <input type="text" class="form-control" id="inputSaludo" placeholder="Enter saludo">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="$('#editProfile').modal('hide');">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="saveEditProfileModal()">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+

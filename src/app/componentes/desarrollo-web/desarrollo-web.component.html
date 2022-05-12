@@ -1,0 +1,29 @@
+  <!-----------------Habilidades Desarrollo Web------------>
+
+  <section class="contenedor-habilidades" id="desarrollo-web">
+
+    <h2><img src="assets/img/desarrolloweb.png" width="40px"> Habilidades de Desarrollo Web</h2>
+
+    <div class="bd-grid">
+        <div class="contenedor-lenguajes">
+            <h3>Frontend</h3>
+
+            <div *ngFor="let lang of desarrolloWebFrontList" class="desarrollo-datos">
+                <span>{{lang.lenguaje}}</span>
+                <span>{{lang.porcentaje}}</span>
+                <span class="barra porcentaje" [style.width]="lang.barra"></span>
+            </div>
+        </div>
+
+        <div class="contenedor-lenguajes">
+            <h3>Backend</h3>
+
+            <div *ngFor="let lang of desarrolloWebBackList" class="desarrollo-datos">
+              <span>{{lang.lenguaje}}</span>
+              <span>{{lang.porcentaje}}</span>
+              <span class="barra porcentaje" [style.width]="lang.barra"></span>
+           </div>
+
+        </div>
+    </div>
+</section>

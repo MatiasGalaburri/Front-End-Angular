@@ -1,0 +1,20 @@
+<!--------------Aqui comienza Formacion Academica -------------->
+<section>
+  <div id="formacion" class="formacion">
+    <div class="formacion-titulo">
+      <h2>
+        <img src="assets/img/FormAcademica.png" width="40px" /> Formación Académica
+      </h2>
+    </div>
+    <div *ngFor="let item of formacionList" class="cuadro-formacion">
+      <dl class="lista-formacion">
+        <dt>Establecimiento:</dt>
+        <dd>{{ item.establecimiento }}</dd>
+        <dt>Año:</dt>
+        <dd>{{ item.anio }}</dd>
+        <dt>Título:</dt>
+        <dd>{{ item.titulo }}</dd>
+      </dl>
+    </div>
+  </div>
+</section>

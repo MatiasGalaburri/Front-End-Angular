@@ -1,0 +1,21 @@
+<!-------------Aqui comienza Experiencia Laboral-------------->
+<section id="experiencia">
+  <div class="experiencia">
+      <h2><img src="assets/img/Laboral.png" width="40px"> Experiencia Laboral</h2>
+
+      <div *ngFor="let exp of experienciaList" class="cuadro-experiencia">
+          <dl class="lista-experiencia">
+              <dt>Empresa:</dt>
+              <dd>{{exp.empresa}}</dd>
+              <dt>Ubicación:</dt>
+              <dd>{{exp.ubicacion}}</dd>
+              <dt>Puesto:</dt>
+              <dd>{{exp.puesto}}</dd>
+              <dt>Funciones:</dt>
+              <dd>{{exp.funciones}}</dd>
+              <dt>Periodo:</dt>
+              <dd>{{exp.periodo}}</dd>
+          </dl>
+      </div>
+  </div>
+</section>
